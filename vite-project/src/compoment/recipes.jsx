@@ -11,8 +11,8 @@ const Recipes = () => {
         try {
           const response = await axios.get(
             id 
-              ? `http://localhost:8000/recipes/${id}` 
-              : 'http://localhost:8000/recipes/all'
+              ? `https://mern-eval-pi.vercel.app/${id}` 
+              : 'https://mern-eval-pi.vercel.app/all'
           )
           setgetRecipes(response.data.data)
         } catch (err) {

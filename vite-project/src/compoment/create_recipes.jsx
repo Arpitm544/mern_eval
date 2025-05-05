@@ -11,7 +11,7 @@ const Create_recipes = () => {
         e.preventDefault();
 
         try {
-          const response= await axios.post("http://localhost:8000/recipes/add", {
+          const response= await axios.post("https://mern-eval-pi.vercel.app/add", {
             title,ingredients,steps,cookingTime
           });
           if(!title||!ingredients||!steps||!cookingTime)
