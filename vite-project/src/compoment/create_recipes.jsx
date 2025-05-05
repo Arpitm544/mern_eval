@@ -22,7 +22,7 @@ const Create_recipes = () => {
                 alert("Added succesfully!");
                 navigate('/recipes/all')
               } else {
-                alert(response.data.message || "Login failed");
+                alert(response.data.message || "FAILED");
               }
         } catch (error) {
           console.error(error);
